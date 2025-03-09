@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-main.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script> -->
+  <script src="https://kendo.cdn.telerik.com/2025.1.227/js/kendo.all.min.js"></script>
+  <style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f5f5f5;
+        padding: 10px 20px;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-btns button {
+        margin-left: 10px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+        <h2>🏠 Dashboard</h2>
+        <div class="nav-btns">
+            <button class="k-button k-primary" onclick="window.location.href='products.html'">Product Management</button>
+            <button class="k-button k-danger" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="k-content" style="padding: 30px;">
+        <h3>Welcome to the Dashboard!</h3>
+        <p>This is your application home screen.</p>
+    </div>
+  <script>
+    function logout() {
+      //localStorage.removeItem("token");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-main.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script> -->
+  <script src="https://kendo.cdn.telerik.com/2025.1.227/js/kendo.all.min.js"></script>
+    <style>
+        .login-wrapper {
+            width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-wrapper k-card k-card-type-rich">
+        <div class="k-card-header">
+            <h3>🔐 Login</h3>
+        </div>
+        <div class="k-card-body">
+            <label for="username">Username:</label>
+            <input id="username" class="k-textbox" style="width: 100%;" /><br /><br />
+
+            <label for="password">Password:</label>
+            <input id="password" class="k-textbox" type="password" style="width: 100%;" /><br /><br />
+
+            <button id="login-btn" class="k-button k-primary" style="width: 100%;">Login</button>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
